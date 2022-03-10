@@ -1,9 +1,17 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 html,
-body {
+body,
+main {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,
+    Open Sans, "Mulish";
 }
 
 a {
@@ -11,6 +19,21 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    max-width: 1024px;
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    max-width: 480px;
+    margin: 0 15px;
+  }
 }
